@@ -156,5 +156,15 @@ This section should detail the cross validation strategy and justify your approa
 #### Reference experiment
 This section should detail the results of the reference experiment. It should includes training metrics and a detailed explanation of the algorithm's performances.
 
+Training
+![1](https://user-images.githubusercontent.com/23568809/155073853-3ae63444-5fed-417e-8cd6-c645c29346b3.png)
+![2](https://user-images.githubusercontent.com/23568809/155073880-34ea0ef1-7b3e-42e3-8850-419bb79fcdee.png)
+![3](https://user-images.githubusercontent.com/23568809/155073892-50765ac8-1e69-4273-9b14-0ec204db819a.png)
+![4](https://user-images.githubusercontent.com/23568809/155073887-43294fe4-e472-451b-adf5-34ca0ee8ceab.png)
+Validation
+![s1](https://user-images.githubusercontent.com/23568809/155073998-078ad3ea-b865-4cd1-b564-31421c2bcfc8.png)
+![s2](https://user-images.githubusercontent.com/23568809/155074011-036e5f17-c7be-4af3-907b-80be85c6e077.png)
+
+
 #### Improve on the reference
 This section should highlight the different strategies you adopted to improve your model. It should contain relevant figures and details of your findings.
