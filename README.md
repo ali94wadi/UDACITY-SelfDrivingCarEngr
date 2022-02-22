@@ -164,6 +164,9 @@ Training
 Validation
 ![s1](https://user-images.githubusercontent.com/23568809/155073998-078ad3ea-b865-4cd1-b564-31421c2bcfc8.png)
 ![s2](https://user-images.githubusercontent.com/23568809/155074011-036e5f17-c7be-4af3-907b-80be85c6e077.png)
+animation
+https://user-images.githubusercontent.com/23568809/155206048-53854bef-0688-4e51-977b-c405af273592.mp4
+
 
 
 #### Improve on the reference
