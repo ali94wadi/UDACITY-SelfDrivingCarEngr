@@ -171,3 +171,22 @@ https://user-images.githubusercontent.com/23568809/155206048-53854bef-0688-4e51-
 
 #### Improve on the reference
 This section should highlight the different strategies you adopted to improve your model. It should contain relevant figures and details of your findings.
+
+After messing around so much and training for a few hours, the follwoing was done:
+- augmentations
+
+Here are some results:
+
+Training
+![e4](https://user-images.githubusercontent.com/23568809/155267864-ec2a488c-8865-458e-a8a4-2e77c023250e.png)
+![e1](https://user-images.githubusercontent.com/23568809/155267868-2d76f89d-1953-4d60-97f0-81f0653052e1.png)
+![e2](https://user-images.githubusercontent.com/23568809/155267869-82bf58b2-120c-4cce-9fc2-1fb26bed031d.png)
+![e3](https://user-images.githubusercontent.com/23568809/155267872-b6b343c1-a633-4ced-9d58-762c9009604e.png)
+
+Validation
+![es1](https://user-images.githubusercontent.com/23568809/155267842-58bce3dd-749f-4e22-bfeb-7be704d6bf3a.png)
+![es3](https://user-images.githubusercontent.com/23568809/155267852-65aa1ffa-47f7-48e1-98bb-5f22ffec640c.png)
+
+Animation
+https://user-images.githubusercontent.com/23568809/155267834-87723cd4-31f6-437f-a48b-647a3ee57a02.mp4
+
