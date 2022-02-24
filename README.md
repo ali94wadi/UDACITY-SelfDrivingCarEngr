@@ -47,7 +47,7 @@ animation
 https://user-images.githubusercontent.com/23568809/155206048-53854bef-0688-4e51-977b-c405af273592.mp4
 
 #### Improve on the reference
-After messing around so much and training for a few hours, "better" results were realized after augmentations to the data. This served to mimic nighttime data to artificially inflate their presense in the training dataset. Results did improve quite a bit, and some classification is successfull in comparison with the reference training. 
+After messing around so much and training for a few hours, "better" results were realized after augmentations to the data. This served to mimic nighttime data to artificially inflate their presense in the training dataset, and it also served to circumvent from any overfitting that an approach like SSD results in. Results did improve quite a bit, and some classification is successfull in comparison with the reference training. 
 
 A summary of the augmentations:
 - random horizontal flips
