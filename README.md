@@ -1,3 +1,59 @@
+## Submission (for grading)
+
+### Project overview
+In this project, a resnet50 pretrained model is used as a starting point for classification and object detection of cars, pedestrains and cyclists in a an autonomous vehicle dataset. The task is of crucial importance to realizing full autonomy in passenger vehicles or otherwise. The trained model is to be optimized to work with the data provided through data-spesific decisions. 
+
+### Set up
+The files in this repo are taken for the most part from the UDACITY-provided virtual environment. The algorithms should run there. Alternatively, steps to use these files on a local machine are provided down below after the resutls. 
+PS **YOUR MILAGE MAY VARY** 
+
+### Dataset
+#### Dataset analysis
+This section should contain a quantitative and qualitative description of the dataset. It should include images, charts and other visualizations.
+#### Cross validation
+This section should detail the cross validation strategy and justify your approach.
+
+### Training
+#### Reference experiment
+First, the provided resnet50 refrence model is trained on the provided dataset then validated and evaluated to show very poor performance of the network. The data includes nighttime streams and it is evident augmentations to the training data are required to get better performance.
+
+Training
+![1](https://user-images.githubusercontent.com/23568809/155073853-3ae63444-5fed-417e-8cd6-c645c29346b3.png)
+![2](https://user-images.githubusercontent.com/23568809/155073880-34ea0ef1-7b3e-42e3-8850-419bb79fcdee.png)
+![3](https://user-images.githubusercontent.com/23568809/155073892-50765ac8-1e69-4273-9b14-0ec204db819a.png)
+![4](https://user-images.githubusercontent.com/23568809/155073887-43294fe4-e472-451b-adf5-34ca0ee8ceab.png)
+Validation
+![s1](https://user-images.githubusercontent.com/23568809/155073998-078ad3ea-b865-4cd1-b564-31421c2bcfc8.png)
+![s2](https://user-images.githubusercontent.com/23568809/155074011-036e5f17-c7be-4af3-907b-80be85c6e077.png)
+animation
+https://user-images.githubusercontent.com/23568809/155206048-53854bef-0688-4e51-977b-c405af273592.mp4
+
+
+
+#### Improve on the reference
+After messing around so much and training for a few hours, "better" results were realized after augmentations to the data. Mainly, random horizontal flips, image crops, grayscale conversion, contrast adjustment, and brightness adjustments were made. This served to mimic nighttime data to artificially inflate their presense in the training dataset. Results did improve quite a bit, and some classification is successfull in comparison with the reference training. 
+
+Here are some results:
+
+Training
+![e4](https://user-images.githubusercontent.com/23568809/155267864-ec2a488c-8865-458e-a8a4-2e77c023250e.png)
+![e1](https://user-images.githubusercontent.com/23568809/155267868-2d76f89d-1953-4d60-97f0-81f0653052e1.png)
+![e2](https://user-images.githubusercontent.com/23568809/155267869-82bf58b2-120c-4cce-9fc2-1fb26bed031d.png)
+![e3](https://user-images.githubusercontent.com/23568809/155267872-b6b343c1-a633-4ced-9d58-762c9009604e.png)
+
+Validation
+![es1](https://user-images.githubusercontent.com/23568809/155267842-58bce3dd-749f-4e22-bfeb-7be704d6bf3a.png)
+![es3](https://user-images.githubusercontent.com/23568809/155267852-65aa1ffa-47f7-48e1-98bb-5f22ffec640c.png)
+
+Animation
+https://user-images.githubusercontent.com/23568809/155267834-87723cd4-31f6-437f-a48b-647a3ee57a02.mp4
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+
+
+
 # Object Detection in an Urban Environment
 
 ## Data
@@ -138,55 +194,4 @@ Finally, you can create a video of your model's inferences for any tf record fil
 python inference_video.py --labelmap_path label_map.pbtxt --model_path experiments/reference/exported/saved_model --tf_record_path /data/waymo/testing/segment-12200383401366682847_2552_140_2572_140_with_camera_labels.tfrecord --config_path experiments/reference/pipeline_new.config --output_path animation.gif
 ```
 
-## Submission Template
-
-### Project overview
-This section should contain a brief description of the project and what we are trying to achieve. Why is object detection such an important component of self driving car systems?
-
-### Set up
-This section should contain a brief description of the steps to follow to run the code for this repository.
-
-### Dataset
-#### Dataset analysis
-This section should contain a quantitative and qualitative description of the dataset. It should include images, charts and other visualizations.
-#### Cross validation
-This section should detail the cross validation strategy and justify your approach.
-
-### Training
-#### Reference experiment
-This section should detail the results of the reference experiment. It should includes training metrics and a detailed explanation of the algorithm's performances.
-
-Training
-![1](https://user-images.githubusercontent.com/23568809/155073853-3ae63444-5fed-417e-8cd6-c645c29346b3.png)
-![2](https://user-images.githubusercontent.com/23568809/155073880-34ea0ef1-7b3e-42e3-8850-419bb79fcdee.png)
-![3](https://user-images.githubusercontent.com/23568809/155073892-50765ac8-1e69-4273-9b14-0ec204db819a.png)
-![4](https://user-images.githubusercontent.com/23568809/155073887-43294fe4-e472-451b-adf5-34ca0ee8ceab.png)
-Validation
-![s1](https://user-images.githubusercontent.com/23568809/155073998-078ad3ea-b865-4cd1-b564-31421c2bcfc8.png)
-![s2](https://user-images.githubusercontent.com/23568809/155074011-036e5f17-c7be-4af3-907b-80be85c6e077.png)
-animation
-https://user-images.githubusercontent.com/23568809/155206048-53854bef-0688-4e51-977b-c405af273592.mp4
-
-
-
-#### Improve on the reference
-This section should highlight the different strategies you adopted to improve your model. It should contain relevant figures and details of your findings.
-
-After messing around so much and training for a few hours, the follwoing was done:
-- augmentations
-
-Here are some results:
-
-Training
-![e4](https://user-images.githubusercontent.com/23568809/155267864-ec2a488c-8865-458e-a8a4-2e77c023250e.png)
-![e1](https://user-images.githubusercontent.com/23568809/155267868-2d76f89d-1953-4d60-97f0-81f0653052e1.png)
-![e2](https://user-images.githubusercontent.com/23568809/155267869-82bf58b2-120c-4cce-9fc2-1fb26bed031d.png)
-![e3](https://user-images.githubusercontent.com/23568809/155267872-b6b343c1-a633-4ced-9d58-762c9009604e.png)
-
-Validation
-![es1](https://user-images.githubusercontent.com/23568809/155267842-58bce3dd-749f-4e22-bfeb-7be704d6bf3a.png)
-![es3](https://user-images.githubusercontent.com/23568809/155267852-65aa1ffa-47f7-48e1-98bb-5f22ffec640c.png)
-
-Animation
-https://user-images.githubusercontent.com/23568809/155267834-87723cd4-31f6-437f-a48b-647a3ee57a02.mp4
 
