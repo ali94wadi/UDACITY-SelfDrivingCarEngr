@@ -29,6 +29,7 @@ First, the dataset is randomly shuffled. Then, an 80-20 split is utilized for th
 First, the provided resnet50 refrence model is trained on the provided dataset then validated and evaluated to show very poor performance of the network. The data includes nighttime streams and it is evident augmentations to the training data are required to get better performance.
 
 Training
+
 ![1](https://user-images.githubusercontent.com/23568809/155073853-3ae63444-5fed-417e-8cd6-c645c29346b3.png)
 ![2](https://user-images.githubusercontent.com/23568809/155073880-34ea0ef1-7b3e-42e3-8850-419bb79fcdee.png)
 ![3](https://user-images.githubusercontent.com/23568809/155073892-50765ac8-1e69-4273-9b14-0ec204db819a.png)
@@ -37,9 +38,12 @@ Training
 Looking at the training results, loss, while being extremely noisy, was on avergae decreasing but not by a great margin. Preformance was also not great in terms of precision and recall. 
 
 Validation
+
 ![s1](https://user-images.githubusercontent.com/23568809/155073998-078ad3ea-b865-4cd1-b564-31421c2bcfc8.png)
 ![s2](https://user-images.githubusercontent.com/23568809/155074011-036e5f17-c7be-4af3-907b-80be85c6e077.png)
+
 animation
+
 https://user-images.githubusercontent.com/23568809/155206048-53854bef-0688-4e51-977b-c405af273592.mp4
 
 #### Improve on the reference
@@ -55,6 +59,7 @@ A summary of the augmentations:
 Here are some results:
 
 Training
+
 ![e4](https://user-images.githubusercontent.com/23568809/155267864-ec2a488c-8865-458e-a8a4-2e77c023250e.png)
 ![e1](https://user-images.githubusercontent.com/23568809/155267868-2d76f89d-1953-4d60-97f0-81f0653052e1.png)
 ![e2](https://user-images.githubusercontent.com/23568809/155267869-82bf58b2-120c-4cce-9fc2-1fb26bed031d.png)
@@ -63,10 +68,12 @@ Training
 Looking at the training results, loss is consistantly moving in the right direction after augmentation. Preformance was also much better in terms of precision and recall. However, it seems like there is more performance to be had by further tuning and perhaps more augmentation and/or model pipeline changes. 
 
 Validation
+
 ![es1](https://user-images.githubusercontent.com/23568809/155267842-58bce3dd-749f-4e22-bfeb-7be704d6bf3a.png)
 ![es3](https://user-images.githubusercontent.com/23568809/155267852-65aa1ffa-47f7-48e1-98bb-5f22ffec640c.png)
 
 Animation
+
 https://user-images.githubusercontent.com/23568809/155267834-87723cd4-31f6-437f-a48b-647a3ee57a02.mp4
 
 ### Comments on Training
