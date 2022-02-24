@@ -22,7 +22,7 @@ Here are some random samples taken from the video stream
 
 
 #### Cross validation
-An 80-20 split is utilized here for the 100 sequences available to work with. 
+First, the dataset is randomly shuffled. Then, an 80-20 split is utilized for the 100 sequences available to work with. 80 sequences are used for training, and 20 for validation. The higher percentage and the shuffling is done to promote diversity and try to minimize the chance of a dominant class in the data (which is also an issue with the data). This ultimately shuold serve to reduce overfitting as much as possible.
 
 ### Training
 #### Reference experiment
@@ -33,6 +33,9 @@ Training
 ![2](https://user-images.githubusercontent.com/23568809/155073880-34ea0ef1-7b3e-42e3-8850-419bb79fcdee.png)
 ![3](https://user-images.githubusercontent.com/23568809/155073892-50765ac8-1e69-4273-9b14-0ec204db819a.png)
 ![4](https://user-images.githubusercontent.com/23568809/155073887-43294fe4-e472-451b-adf5-34ca0ee8ceab.png)
+
+Looking at the training results, loss, while being extremely noisy, was on avergae decreasing but not by a great margin. Preformance was also not great in terms of precision and recall. 
+
 Validation
 ![s1](https://user-images.githubusercontent.com/23568809/155073998-078ad3ea-b865-4cd1-b564-31421c2bcfc8.png)
 ![s2](https://user-images.githubusercontent.com/23568809/155074011-036e5f17-c7be-4af3-907b-80be85c6e077.png)
@@ -40,7 +43,14 @@ animation
 https://user-images.githubusercontent.com/23568809/155206048-53854bef-0688-4e51-977b-c405af273592.mp4
 
 #### Improve on the reference
-After messing around so much and training for a few hours, "better" results were realized after augmentations to the data. Mainly, random horizontal flips, image crops, grayscale conversion, contrast adjustment, and brightness adjustments were made. This served to mimic nighttime data to artificially inflate their presense in the training dataset. Results did improve quite a bit, and some classification is successfull in comparison with the reference training. 
+After messing around so much and training for a few hours, "better" results were realized after augmentations to the data. This served to mimic nighttime data to artificially inflate their presense in the training dataset. Results did improve quite a bit, and some classification is successfull in comparison with the reference training. 
+
+A summary of the augmentations:
+-random horizontal flips
+-image crops
+-grayscale conversion
+-contrast adjustment
+-brightness adjustments
 
 Here are some results:
 
@@ -49,6 +59,8 @@ Training
 ![e1](https://user-images.githubusercontent.com/23568809/155267868-2d76f89d-1953-4d60-97f0-81f0653052e1.png)
 ![e2](https://user-images.githubusercontent.com/23568809/155267869-82bf58b2-120c-4cce-9fc2-1fb26bed031d.png)
 ![e3](https://user-images.githubusercontent.com/23568809/155267872-b6b343c1-a633-4ced-9d58-762c9009604e.png)
+
+Looking at the training results, loss is consistantly moving in the right direction after augmentation. Preformance was also much better in terms of precision and recall. However, it seems like there is more performance to be had by further tuning and perhaps more augmentation and/or model pipeline changes. 
 
 Validation
 ![es1](https://user-images.githubusercontent.com/23568809/155267842-58bce3dd-749f-4e22-bfeb-7be704d6bf3a.png)
@@ -59,7 +71,7 @@ https://user-images.githubusercontent.com/23568809/155267834-87723cd4-31f6-437f-
 
 ### Comments on Training
 While the training losses are heading the right direction, it is evident the improvement to the pipeline resulted in better performance as shown in the steepest trend describing training after augmentation. 
-It seems that we can still make improvements to th pipeline, but that requires more time finetuning the augmentations. Another approach could be to change the network to something other than the suggested resnet50, but this would require much more time as well. I think the realized improvement at least shows promise in terms of possible future performance.  
+It seems that we can still make improvements to th pipeline, but that requires more time finetuning the augmentations. Another approach could be to change the network to something other than the suggested resnet50, but this would require much more time as well. I think the realized improvement at least shows promise in terms of possible future performance. Moreover, this is an SSD that is aimed at quick computation to generate results on behalf of some loss in performance.
 -----------------------------------------------------------------------------------------------------------------
 
 
