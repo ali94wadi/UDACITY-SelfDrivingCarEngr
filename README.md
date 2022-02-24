@@ -9,9 +9,17 @@ PS **YOUR MILAGE MAY VARY**
 
 ### Dataset
 #### Dataset analysis
-This section should contain a quantitative and qualitative description of the dataset. It should include images, charts and other visualizations.
+The training data was analyzed and here are some rough figures (analysis had to be repeated as a consequence of data loss due to the VM apps crashing frequently)
+![index](https://user-images.githubusercontent.com/23568809/155496149-b0e9c8b4-4ab6-46ba-8fdf-e42be7bc00a5.png)
+As can be seen, cars are most frequent in the dataset, followed by pedistriants and finally cyclists. this will affect the performance in relation to how much data of each category is there.
+
+Here are some random samples taken from the video stream
+![sss](https://user-images.githubusercontent.com/23568809/155496427-7756b331-e96b-4f8f-af2f-870872138bb4.png)
+![sssss](https://user-images.githubusercontent.com/23568809/155496433-e5fcb1bd-5cca-4285-829c-06db02a34df3.png)
+
+
 #### Cross validation
-This section should detail the cross validation strategy and justify your approach.
+An 80-20 split is utilized here for the 100 sequences available to work with. 
 
 ### Training
 #### Reference experiment
