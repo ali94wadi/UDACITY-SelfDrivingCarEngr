@@ -10,7 +10,9 @@ PS **YOUR MILAGE MAY VARY**
 ### Dataset
 #### Dataset analysis
 The training data was analyzed and here are some rough figures (analysis had to be repeated as a consequence of data loss due to the VM apps crashing frequently)
+
 ![index](https://user-images.githubusercontent.com/23568809/155496149-b0e9c8b4-4ab6-46ba-8fdf-e42be7bc00a5.png)
+
 As can be seen, cars are most frequent in the dataset, followed by pedistriants and finally cyclists. this will affect the performance in relation to how much data of each category is there.
 
 Here are some random samples taken from the video stream
