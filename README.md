@@ -50,11 +50,11 @@ https://user-images.githubusercontent.com/23568809/155206048-53854bef-0688-4e51-
 After messing around so much and training for a few hours, "better" results were realized after augmentations to the data. This served to mimic nighttime data to artificially inflate their presense in the training dataset. Results did improve quite a bit, and some classification is successfull in comparison with the reference training. 
 
 A summary of the augmentations:
--random horizontal flips
--image crops
--grayscale conversion
--contrast adjustment
--brightness adjustments
+- random horizontal flips
+- image crops
+- grayscale conversion
+- contrast adjustment
+- brightness adjustments
 
 Here are some results:
 
