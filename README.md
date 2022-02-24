@@ -28,8 +28,6 @@ Validation
 animation
 https://user-images.githubusercontent.com/23568809/155206048-53854bef-0688-4e51-977b-c405af273592.mp4
 
-
-
 #### Improve on the reference
 After messing around so much and training for a few hours, "better" results were realized after augmentations to the data. Mainly, random horizontal flips, image crops, grayscale conversion, contrast adjustment, and brightness adjustments were made. This served to mimic nighttime data to artificially inflate their presense in the training dataset. Results did improve quite a bit, and some classification is successfull in comparison with the reference training. 
 
@@ -48,6 +46,9 @@ Validation
 Animation
 https://user-images.githubusercontent.com/23568809/155267834-87723cd4-31f6-437f-a48b-647a3ee57a02.mp4
 
+### Comments on Training
+While the training losses are heading the right direction, it is evident the improvement to the pipeline resulted in better performance as shown in the steepest trend describing training after augmentation. 
+It seems that we can still make improvements to th pipeline, but that requires more time finetuning the augmentations. Another approach could be to change the network to something other than the suggested resnet50, but this would require much more time as well. I think the realized improvement at least shows promise in terms of possible future performance.  
 -----------------------------------------------------------------------------------------------------------------
 
 
