@@ -32,7 +32,7 @@ Training
 
 ![ref_1](https://user-images.githubusercontent.com/23568809/155835593-539d5cf1-a92b-4e82-82b2-4ea92034a5c8.png)
 
-Looking at the training results, loss, while being extremely noisy, was on avergae decreasing but not by a great margin. Preformance was also not great in terms of precision and recall. 
+Looking at the training results, loss, while being extremely noisy, was on average decreasing and it does reach some steady state. Preformance was also not great in terms of precision and recall. **PS: only 5k steps were used as the VM is scarce in memory resources and eval/train parallel sessions are VERY BUGGY. They cannot be run together all the time, and it was necessary to stop the training to do evaluation to delete checkpoints, and then rrepeat...**
 
 Validation
 
