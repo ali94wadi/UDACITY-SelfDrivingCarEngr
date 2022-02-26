@@ -49,12 +49,40 @@ https://user-images.githubusercontent.com/23568809/155206048-53854bef-0688-4e51-
 #### Improve on the reference
 After messing around so much and training for a few hours, "better" results were realized after augmentations to the data. This served to mimic nighttime data to artificially inflate their presense in the training dataset, and it also served to circumvent from any overfitting that an approach like SSD results in. Results did improve quite a bit, and some classification is successfull in comparison with the reference training. 
 
-A summary of the augmentations:
-- random horizontal flips
-- image crops
-- grayscale conversion
-- contrast adjustment
-- brightness adjustments
+A summary of the augmentations inserted into `pipeline_new.config`:
+```
+data_augmentation_options {
+    random_horizontal_flip {
+    probability: 0.5
+    }
+  }
+  data_augmentation_options {
+    random_crop_image {
+      min_object_covered: 0.0
+      min_aspect_ratio: 0.75
+      max_aspect_ratio: 3.0
+      min_area: 0.75
+      max_area: 1.0
+      overlap_thresh: 0.0
+    }
+  }
+  data_augmentation_options {
+    random_rgb_to_gray {
+    probability: 0.5
+    }
+  }
+  data_augmentation_options {
+    random_adjust_contrast {
+    min_delta: 0.6
+    max_delta: 1.0
+    }
+  }
+  data_augmentation_options {
+    random_adjust_brightness {
+    max_delta: 0.3
+    }
+    }
+```
 
 Here are some results:
 
