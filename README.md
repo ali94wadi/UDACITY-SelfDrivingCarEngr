@@ -94,6 +94,8 @@ Training
 
 Looking at the training results, loss is consistantly moving in the right direction after augmentation. Preformance was also much better in terms of precision and recall. However, it seems like there is more performance to be had by further tuning and perhaps more augmentation and/or model pipeline changes. 
 
+**PS: this was run multiple times. Hence, the multiple tendlines. VM is also difficult to work with here, as detailed in the PS in the reference experiment section, and it bugged out with the eval having a single data point..**
+
 Validation
 
 ![es1](https://user-images.githubusercontent.com/23568809/155267842-58bce3dd-749f-4e22-bfeb-7be704d6bf3a.png)
