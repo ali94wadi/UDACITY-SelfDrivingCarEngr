@@ -30,10 +30,7 @@ First, the provided resnet50 refrence model is trained on the provided dataset t
 
 Training
 
-![1](https://user-images.githubusercontent.com/23568809/155073853-3ae63444-5fed-417e-8cd6-c645c29346b3.png)
-![2](https://user-images.githubusercontent.com/23568809/155073880-34ea0ef1-7b3e-42e3-8850-419bb79fcdee.png)
-![3](https://user-images.githubusercontent.com/23568809/155073892-50765ac8-1e69-4273-9b14-0ec204db819a.png)
-![4](https://user-images.githubusercontent.com/23568809/155073887-43294fe4-e472-451b-adf5-34ca0ee8ceab.png)
+![ref_1](https://user-images.githubusercontent.com/23568809/155835593-539d5cf1-a92b-4e82-82b2-4ea92034a5c8.png)
 
 Looking at the training results, loss, while being extremely noisy, was on avergae decreasing but not by a great margin. Preformance was also not great in terms of precision and recall. 
 
