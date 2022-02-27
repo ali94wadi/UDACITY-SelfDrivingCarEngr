@@ -100,10 +100,6 @@ Validation
 
 Animation
 
-https://user-images.githubusercontent.com/23568809/155267834-87723cd4-31f6-437f-a48b-647a3ee57a02.mp4
-
-
-
 https://user-images.githubusercontent.com/23568809/155880451-0b69311c-3353-4421-8229-64b1551eae12.mp4
 
 
