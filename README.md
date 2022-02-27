@@ -89,9 +89,8 @@ Training
 
 ![exp](https://user-images.githubusercontent.com/23568809/155880457-5774ac57-42a0-472e-8a2a-e09e2bf7f849.png)
 
-Looking at the training results, loss is consistantly moving in the right direction after augmentation. Preformance was also much better in terms of precision and recall. However, it seems like there is more performance to be had by further tuning and perhaps more augmentation and/or model pipeline changes. 
+Looking at the training results, loss is consistantly moving in the right direction after augmentation. Preformance was also much better in terms of precision and recall. Under the limitations posed by the VM, good results are achieved after training for more time and inflating both the learning rate and the warmup time. It seems like there is more performance to be had by further tuning and perhaps more augmentation and/or model pipeline changes, but total loss is around ~1.5, classificaiton is happening, and training did reach a plateau. 
 
-**PS: this was run multiple times. Hence, the multiple tendlines. VM is also difficult to work with here, as detailed in the PS in the reference experiment section, and it bugged out with the eval having a single data point..**
 
 Validation
 
@@ -105,6 +104,7 @@ https://user-images.githubusercontent.com/23568809/155880451-0b69311c-3353-4421-
 
 
 ### Comments on Training
+
 While the training losses are heading the right direction, it is evident the improvement to the pipeline resulted in better performance as shown in the steepest trend describing training after augmentation. 
 It seems that we can still make improvements to th pipeline, but that requires more time finetuning the augmentations. Another approach could be to change the network to something other than the suggested resnet50, but this would require much more time as well. I think the realized improvement at least shows promise in terms of possible future performance. Moreover, this is an SSD that is aimed at quick computation to generate results on behalf of some loss in performance.
 -----------------------------------------------------------------------------------------------------------------
