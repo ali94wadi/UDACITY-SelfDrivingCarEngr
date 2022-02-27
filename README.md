@@ -87,10 +87,7 @@ Here are some results:
 
 Training
 
-![e4](https://user-images.githubusercontent.com/23568809/155267864-ec2a488c-8865-458e-a8a4-2e77c023250e.png)
-![e1](https://user-images.githubusercontent.com/23568809/155267868-2d76f89d-1953-4d60-97f0-81f0653052e1.png)
-![e2](https://user-images.githubusercontent.com/23568809/155267869-82bf58b2-120c-4cce-9fc2-1fb26bed031d.png)
-![e3](https://user-images.githubusercontent.com/23568809/155267872-b6b343c1-a633-4ced-9d58-762c9009604e.png)
+![exp](https://user-images.githubusercontent.com/23568809/155880457-5774ac57-42a0-472e-8a2a-e09e2bf7f849.png)
 
 Looking at the training results, loss is consistantly moving in the right direction after augmentation. Preformance was also much better in terms of precision and recall. However, it seems like there is more performance to be had by further tuning and perhaps more augmentation and/or model pipeline changes. 
 
@@ -104,6 +101,12 @@ Validation
 Animation
 
 https://user-images.githubusercontent.com/23568809/155267834-87723cd4-31f6-437f-a48b-647a3ee57a02.mp4
+
+
+
+https://user-images.githubusercontent.com/23568809/155880451-0b69311c-3353-4421-8229-64b1551eae12.mp4
+
+
 
 ### Comments on Training
 While the training losses are heading the right direction, it is evident the improvement to the pipeline resulted in better performance as shown in the steepest trend describing training after augmentation. 
