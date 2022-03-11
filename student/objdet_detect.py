@@ -72,7 +72,7 @@ def load_configs_model(model_name='darknet', configs=None):
         configs.gpu_idx = 0
         configs.batch_size = 1
         configs.num_samples = None
-        configs.num_workers = 1
+        configs.num_workers = 4
         configs.peak_thresh = 0.2
         configs.save_test_output = False
         configs.output_format = 'image'
@@ -93,6 +93,7 @@ def load_configs_model(model_name='darknet', configs=None):
         configs.num_direction = 2
         configs.heads = {'hm_cen': configs.num_classes, 'cen_offset': configs.num_center_offset,'direction': configs.num_direction, 'z_coor': configs.num_z,'dim': configs.num_dim}
         configs.num_input_features = 4
+        configs.min_iou = 0.5
 
         configs.model_path = os.path.join(parent_path, 'tools', 'objdet_models', 'resnet')
         configs.pretrained_filename = os.path.join(configs.model_path, 'pretrained', 'fpn_resnet_18_epoch_300.pth')
