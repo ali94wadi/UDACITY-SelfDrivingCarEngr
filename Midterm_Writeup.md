@@ -16,4 +16,4 @@ We see:
 - vehicles appearing from the front, as they appear in front of the waymo car 
 - vehicles approachhing, coming up, and speeding past the waymo car
 - vehicles appearing from the back coming into detectable range
-- vehicle occlusion as they are behind other vehicles, on the other side of the road, or behind poles or other landmarks
+- vehicle occlusion as they are behind other vehicles, on the other side of the road, or behind poles/trees or other landmarks
