@@ -36,8 +36,13 @@ https://user-images.githubusercontent.com/23568809/158014956-bfc1b9ae-85c8-4734-
 here
 
 
+#trial 1 - track management issues incountered
 
 https://user-images.githubusercontent.com/23568809/158017531-f03298c0-01eb-454a-9428-c80c5c95dda1.mp4
+ 
+#trial 2 - issues fixed
+
+https://user-images.githubusercontent.com/23568809/158017564-bb3ef7a0-98e1-4b14-9a8d-9ecac40a39c5.mp4
 
 
 ![P_T4_1](https://user-images.githubusercontent.com/23568809/158017533-d4bb9ab4-2772-43df-8741-fb19378789b5.png)
