@@ -91,13 +91,7 @@ def load_configs_model(model_name='darknet', configs=None):
         configs.num_z = 1
         configs.num_dim = 3
         configs.num_direction = 2
-        configs.heads = {
-        'hm_cen': configs.num_classes,
-        'cen_offset': configs.num_center_offset,
-        'direction': configs.num_direction,
-        'z_coor': configs.num_z,
-        'dim': configs.num_dim
-        }
+        configs.heads = {'hm_cen': configs.num_classes, 'cen_offset': configs.num_center_offset,'direction': configs.num_direction, 'z_coor': configs.num_z,'dim': configs.num_dim}
         configs.num_input_features = 4
         configs.min_iou = 0.5
 
