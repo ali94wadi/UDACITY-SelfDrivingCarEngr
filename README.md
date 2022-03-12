@@ -33,6 +33,16 @@ https://user-images.githubusercontent.com/23568809/158014956-bfc1b9ae-85c8-4734-
 
 ## camera fusion
 
+here
+
+
+
+https://user-images.githubusercontent.com/23568809/158017531-f03298c0-01eb-454a-9428-c80c5c95dda1.mp4
+
+
+![P_T4_1](https://user-images.githubusercontent.com/23568809/158017533-d4bb9ab4-2772-43df-8741-fb19378789b5.png)
+
+
 ### 2. Do you see any benefits in camera-lidar fusion compared to lidar-only tracking (in theory and in your concrete results)? 
 
 
