@@ -16,3 +16,11 @@ cd /home/workspace
 cd /home/workspace/
 
 ./cloud_loc
+
+# Results
+## ICP
+![ICP](https://user-images.githubusercontent.com/23568809/160275220-69a80e70-296e-44c7-ac8f-26586092fa70.png)
+
+## NDT
+![NDT](https://user-images.githubusercontent.com/23568809/160275214-6dfcc8d1-d0aa-4037-8db3-a76dfd352205.png)
+
