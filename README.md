@@ -1,4 +1,4 @@
-# -SelfDrivingCarEngr-ScanMatchingLocalization
+# SelfDrivingCarEngr-ScanMatchingLocalization
 
 1. Compile the code (Terminal Tab 1)
 ```
